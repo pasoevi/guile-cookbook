@@ -14,33 +14,47 @@ published: false
 
 #### Simply Importing modules
 
-    (use-modules (srfi srfi-19))
+{% highlight scheme %}
+(use-modules (srfi srfi-19))
+{% endhighlight %}
 
 ### Strings
 
 #### Reverse String
-    (string-reverse str [start [end]])
+
+{% highlight scheme %}
+(string-reverse str [start [end]])
+{% endhighlight %}
 
 #### Reverse String in Place
-    (string-reverse! str [start [end]])
+
+{% highlight scheme %}
+(string-reverse! str [start [end]])
+{% endhighlight %}
 
 ### Time and Date
 
 ### IO
+
+{% highlight scheme %}
     (open-file filename
         (if binary "wb" "w")
             #:encoding encoding)
-
+{% endhighlight %}
 
 ### Network
 
 #### Http requests
-    (use-modules (web client))
-    (http-get url #:streaming? #t)
+{% highlight scheme %}
+(use-modules (web client))
+(http-get url #:streaming? #t)
+{% endhighlight %}
 
 #### Displaying text
-    (display "Guile Cookbook")
-    (newline)
+{% highlight scheme %}
+(display "Guile Cookbook")
+(newline)
+{% endhighlight %}
 
 ## The C Side
 
